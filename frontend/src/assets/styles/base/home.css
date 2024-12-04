@@ -1,0 +1,9 @@
+.containerPost-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    gap: 100px
+}

@@ -1,0 +1,23 @@
+# Utiliser une image Go officielle comme image de base
+FROM golang:1.23.1
+
+# Défini le répertoire de travail à /app
+WORKDIR /app
+
+# Copier le reste des fichiers de l'application
+COPY . /app/backend
+
+# Move le fichier .git dans le dossier app/
+
+RUN go install -tags 'sqlite' github.com/golang-migrate/migrate/v4/cmd/migrate@latest && \
+
+    ln -s /go/bin/linux_amd64/migrate /usr/local/bin/migrate && \
+    apt-get update && \
+    apt-get install -y zsh && \
+    sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" && \
+    cd backend/ && go get github.com/mattn/go-sqlite3
+# Exposer le port que l'application utilise
+EXPOSE 8080
+
+# Commande pour exécuter l'application
+CMD ["tail", "-f", "/dev/null"]

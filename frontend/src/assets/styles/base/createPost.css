@@ -1,0 +1,246 @@
+.container-post {
+     position: relative;
+     height: auto;
+     max-height: 600px;
+     display: flex;
+     gap: 30px;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 7%;
+     width: 75vw;
+}
+
+#form-post {
+     display: flex;
+     flex-direction: row;
+     gap: 50px;
+     width: 100%;
+     justify-content: center;
+}
+
+.image-post {
+     display: flex;
+     min-width: 250px;
+     width: fit-content;
+     height: 500px;
+     border: 1px solid grey;
+     border-radius: 25px;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+     cursor: pointer;
+     font-size: 16px;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     transition: ease-in-out 0.3;
+
+}
+
+.Text-post {
+     display: flex;
+     flex-direction: column;
+     width: 65%;
+     align-items: center;
+     justify-content: center;
+     gap: 10%;
+}
+
+.button-privacy {
+     width: 116px;
+     height: 50px;
+     flex-shrink: 0;
+     color: white;
+}
+
+.textarea-createPost {
+     position: relative;
+     width: 90%;
+     height: 50%;
+     flex-shrink: 0;
+     border-radius: 10px;
+     border: 0.7px solid #D1D1D1;
+     background: #FFF;
+     resize: none;
+     word-wrap: break-word;
+     white-space: normal;
+     overflow-wrap: break-word;
+     padding: 10px;
+     box-sizing: border-box;
+     font-size: 20px;
+     scrollbar-width: none;
+}
+
+#avatar-post {
+     display: none;
+}
+
+.removePhoto-Post {
+     margin: 5px;
+}
+
+.removePhoto-Post:hover {
+     cursor: pointer;
+}
+
+.superposition-Post {
+     position: relative;
+}
+
+.superposition-Post .overlay-disabled {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+     display: flex;
+     z-index: 1;
+}
+
+.imagePreview-Post {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.title-post {
+     z-index: 2;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 20%;
+}
+
+select.button-privacy {
+     pointer-events: none;
+     appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     background-color: #393C5E;
+     border-radius: var(--Radius-100, 4px);
+     width: 100%;
+     height: 30px;
+     cursor: pointer;
+     position: relative;
+     font-family: 'Abhaya Libre', serif;
+     text-align: center;
+     border: none;
+     font-size: 16px;
+}
+
+.custom-select-container {
+     position: relative;
+     width: 250px;
+}
+
+.custom-options {
+     text-align: center;
+     display: none;
+     position: absolute;
+     width: 100%;
+}
+
+.custom-options.active {
+     display: block;
+}
+
+.custom-option {
+     font-family: 'Abhaya Libre', serif;
+     margin: 10px;
+     padding: 5px;
+     cursor: pointer;
+     background-color: #393C5E;
+     border-radius: 4px;
+     transition: background-color 0.2s ease-in-out;
+     color: white;
+}
+
+.custom-option:hover {
+     background-color: #55598b;
+}
+
+.Preview_image_post {
+     z-index: 40;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 500px;
+     height: 500px;
+     background-size: cover;
+     background-position: center;
+}
+
+.Preview_image_post img {
+     max-width: 100%;
+     max-height: 100%;
+     width: auto;
+     height: auto;
+     object-fit: contain;
+     margin: auto;
+}
+
+body .Flou {
+     display: none;
+     position: fixed;
+     height: 100vh;
+     width: 100vw;
+     backdrop-filter: blur(10px);
+     top: 0;
+     right: 0;
+     z-index: 39;
+}
+
+.cross-createPost {
+     position: relative;
+     cursor: pointer;
+}
+
+.button-post {
+     border-radius: 50px;
+     border: 1px solid #FFF;
+     border-radius: 50px;
+     background-color: #393C5E;
+     height: 35px;
+     border: none;
+     width: 15vw;
+     color: white;
+     transition: background-color 0.2s ease-in-out;
+}
+
+.button-post:hover {
+     background-color: #4C4F6E;
+     cursor: pointer;
+}
+
+.error-Post {
+     color: red;
+}
+
+@media (max-width: 650px) {
+     #form-post {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          gap: 25px;
+          box-sizing: border-box;
+
+     }
+
+     .image-post {
+          height: 30vh;
+     }
+
+     .Text-post {
+          gap: 25px;
+     }
+
+     .textarea-createPost {
+          height: 300px;
+     }
+}

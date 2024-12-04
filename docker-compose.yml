@@ -1,0 +1,25 @@
+services:
+  backend:
+    image: back
+    container_name: Back
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    volumes:
+      - ./gitea:/data
+    ports:
+      - "8080:8080"
+    networks:
+      - My_networks
+
+  frontend:
+    image: front
+    container_name: Front
+    ports:
+      - "5173:5173"
+    networks:
+      - My_networks
+
+networks:
+  My_networks:
+    driver: bridge

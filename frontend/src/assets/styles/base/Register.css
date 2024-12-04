@@ -1,0 +1,347 @@
+.p-register {
+     font-family: 'Baloo Da 2', sans-serif;
+}
+
+.table-container-register td {
+     padding-right: 25px;
+}
+
+.table-container-register td:last-child {
+     padding-right: 0;
+}
+
+#center-register {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     border-radius: 60px;
+     width: 600px;
+     min-height: 450px;
+     height: auto;
+     max-height: 590px;
+     text-align: center;
+     margin-bottom: 15px;
+     position: relative;
+     border: 1px solid grey;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+     padding: 20px;
+}
+
+#center-register * {
+     text-align: center;
+}
+
+.circle-wrapper-register {
+     position: relative;
+}
+
+#file-input-register {
+     display: none;
+}
+
+.circle-label-register {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 130px;
+     height: 130px;
+     border-radius: 50%;
+     background-color: #D9D9D9;
+     color: black;
+     cursor: pointer;
+     font-size: 14px;
+     font-family: 'Abhaya Libre', serif;
+     background-size: cover;
+     background-position: center;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+     transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.circle-label-register:hover {
+     background-color: #B0B0B0;
+     transform: scale(1.1);
+}
+
+.input-register {
+     border-radius: 25px;
+     border: 0.7px solid #565656;
+     background: #FFF;
+     width: 230px;
+     height: 18px;
+     flex-shrink: 0;
+     padding: 4px 10px;
+}
+
+#profil-register {
+     display: flex;
+     flex-direction: row;
+     left: 10%;
+     position: relative;
+}
+
+.registration {
+     position: relative;
+     font-family: 'Abhaya Libre', serif;
+     font-weight: 800;
+     color: #393C5E;
+     font-size: 30px;
+     top: 10%;
+     left: 40%;
+}
+
+.Signup-register {
+     border-radius: 50px;
+     background: #393C5E;
+     color: #FFF;
+     text-align: center;
+     font-family: "Abhaya Libre ExtraBold";
+     font-size: 17px;
+     font-style: normal;
+     font-weight: 800;
+     line-height: normal;
+     width: 125px;
+     height: 30px;
+     margin-top: 20px;
+     transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.Signup-register:hover {
+     background: #24263f;
+     cursor: pointer;
+     transform: scale(1.1);
+     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.WhiteSignIn-register {
+     color: grey;
+     text-decoration: none;
+     font-family: 'Baloo Da 2', sans-serif;
+     font-size: 16px;
+}
+
+.WhiteSignIn-register:hover {
+     cursor: pointer;
+     text-decoration: underline;
+}
+
+.Usernamediv-register {
+     position: relative;
+     top: 15%;
+     left: 40%;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+}
+
+.Usernamediv-register p {
+     font-size: 14px;
+     margin: 25px 25px 3px 0px;
+}
+
+.about-input-register {
+     border-radius: 25px;
+     border: 0.7px solid #565656;
+     background: #FFF;
+     flex-shrink: 0;
+     padding: 4px 10px;
+     width: 375px;
+     height: 65px;
+     resize: none;
+}
+
+.input-container-register {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+}
+
+.input-container-register p {
+     font-size: 14px;
+     margin: 25px 25px 3px 0px;
+}
+
+.about-div-register {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     position: relative;
+     left: 14%;
+}
+
+.about-div-register p {
+     font-size: 14px;
+     margin: 15px 25px 3px 0px;
+}
+
+.emailandverif-register {
+     display: flex;
+     flex-direction: row;
+}
+
+ul.errors-list-register {
+     font-size: 14px;
+     color: red;
+     padding: 0;
+}
+
+.errors-list-register {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+}
+
+
+ul.errors-list-register li {
+     list-style-type: none;
+}
+
+.errors-list-register {
+     right: 24%;
+     position: relative;
+}
+
+#Allerrors-register {
+     display: flex;
+     justify-content: center;
+     align-items: left;
+     flex-direction: column;
+     height: auto;
+     width: 250px;
+     z-index: 2;
+     text-align: left;
+     padding: 10px;
+     margin: 10px;
+     position: relative;
+}
+
+#Allerrors-register p {
+     margin: 0;
+     font-size: 14px;
+     color: #333;
+     line-height: 1.5;
+     position: relative;
+     padding-left: 10px;
+     color: red;
+}
+
+
+.input-success-register {
+     border: 2px solid green;
+     border-color: green;
+     box-shadow: 0 0 5px green;
+}
+
+.input-success-register:focus {
+     outline: none;
+     border-color: green;
+     box-shadow: 0 0 5px green;
+}
+
+.input-failed-register {
+     border: 2px solid red;
+     border-color: red;
+     box-shadow: 0 0 5px red;
+}
+
+.input-failed-register:focus {
+     outline: none;
+     border-color: red;
+     box-shadow: 0 0 5px red;
+}
+
+.cross-register {
+     position: relative;
+     cursor: pointer;
+     padding-bottom: 10px;
+}
+
+@media (max-width: 650px) {
+     .errors-list-register {
+          right: 0;
+     }
+
+     #center-register {
+          width: 80vw;
+          height: auto;
+          max-height: 80vh;
+          overflow-y: auto;
+          overflow-x: hidden;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+          scrollbar-width: none;
+          margin: 15px;
+     }
+
+     .Usernamediv-register {
+          left: 0;
+     }
+
+     #center-register>* {
+          width: 100%;
+          text-align: center;
+     }
+
+     #profil-register {
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          left: 0;
+          gap: 10px;
+     }
+
+     .input-register,
+     .about-input-register {
+          width: 100%;
+     }
+
+     .table-container-register {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          max-height: 100%;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .table-container-register td {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          box-sizing: border-box;
+     }
+
+     .registration {
+          left: 0;
+          top: 0;
+          margin-top: 10px;
+     }
+
+     .about-div-register {
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          margin: 0px 0px 3px 0px;
+          max-width: 75%;
+     }
+
+     #Allerrors-register {
+          width: 50%;
+          padding: 10px;
+          margin: 10px;
+     }
+
+}
+
+@media (max-height: 625px) {
+
+     body {
+          display: flex;
+          align-items: flex-start;
+          padding: 10px;
+     }
+
+}

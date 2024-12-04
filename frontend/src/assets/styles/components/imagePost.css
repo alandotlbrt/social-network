@@ -1,0 +1,53 @@
+.containerOnlyImage-post {
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    border: 2px solid white;
+    overflow: hidden;
+    position: relative
+}
+
+.headerOnlyImage-post {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 5px 3px 3px 7px;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+.profilePicture-post {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#name {
+    margin-left: 50px
+}
+
+.hours-post {
+    margin-left: 40px
+}
+
+.onlyImage-post {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    cursor: pointer
+}
+
+.onlyImage-post:hover {
+    filter: blur(5px);
+    
+}

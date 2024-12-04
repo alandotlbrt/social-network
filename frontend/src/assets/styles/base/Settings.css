@@ -1,0 +1,371 @@
+.hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-settings {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
+  padding: 20px 35px 20px 35px;
+  margin-top: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: auto;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+#file-input-settings {
+  display: none;
+}
+
+.table-container-settings td {
+  padding-right: 35px;
+}
+
+.input-settings {
+  border-radius: 25px;
+  border: 0.7px solid #565656;
+  background: #FFF;
+  width: 230px;
+  height: 18px;
+  flex-shrink: 0;
+  padding: 4px 10px;
+}
+
+.input-settings:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none
+}
+
+.circleAndstatut-settings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-top: 2%
+}
+
+.circle-label-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Abhaya Libre', serif;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.circle-label-settings:hover {
+  background-color: #B0B0B0;
+  transform: scale(1.1);
+}
+
+.switch-settings {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 5vw
+}
+
+.switch-settings input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-settings {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 25px
+}
+
+.slider-settings:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%
+}
+
+input:checked+.slider-settings {
+  background-color: #393C5E;
+}
+
+input:checked+.slider-settings:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.usernameDiv-settings {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2%
+}
+
+.pUsername-settings {
+  margin-bottom: 0px
+}
+
+.EmailDiv-settings {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+.pEmail-settings {
+  margin-bottom: 0px
+}
+
+.lastNameDiv-settings {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pLastName-settings {
+  margin-bottom: 0px
+}
+
+.firstNameDiv-settings {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pFirstName-settings {
+  margin-bottom: 0px
+}
+
+.passwordDiv-settings {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pPassword-settings {
+  margin-bottom: 0px
+}
+
+.newPasswordDiv-settings {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1px;
+}
+
+.pNewPassword-settings {
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+.aboutMeDiv-settings {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative
+}
+
+.pAboutMe-settings {
+  margin-bottom: 0px
+}
+
+.submit-settings {
+  border: none;
+  border-radius: 20px;
+  background: #393C5E;
+  color: white;
+  width: 20%;
+  height: 30px;
+  font-size: 21px;
+  cursor: pointer;
+  font-family: 'Abhaya Libre', serif;
+  transition: transform 0.4s ease;
+  margin-top: 3%
+}
+
+.submit-settings:hover {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}
+
+.aboutInput-settings {
+  border-radius: 17px;
+  border: 0.7px solid #565656;
+  background: #FFF;
+  flex-shrink: 0;
+  padding: 4px 10px;
+  width: 70%;
+  height: 65px;
+  resize: none;
+  position: relative;
+}
+
+.AboutAndChar-settings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  left: 10%
+}
+
+#charCount-settings {
+  width: 15px;
+  margin-left: 5%;
+  font-family: 'Baloo Da 2', sans-serif;
+}
+
+
+.settingsForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#right {
+  padding-right: 0
+}
+
+/* ================================================== RESPONSIVE ========================================================= */
+
+
+@media (max-width: 870px) {
+  .container-settings {
+    width: 85%;
+  }
+}
+
+@media (max-width: 750px) {
+  .container-settings {
+    width: 80%;
+  }
+  .input-settings {
+    width: 200px
+  }
+}
+
+@media (max-width: 690px) {
+  .aboutMeDiv-settings {
+    width: 120%;
+  }
+  .AboutAndChar-settings {
+    flex-direction: column;
+    left: 0
+  }
+  .circleAndstatut-settings {
+    padding-top: 10%
+  }
+  #charCount-settings {
+    margin-left: 45%
+  }
+  #right {
+    padding-left: 0
+  }
+  .input-settings {
+    width: 170px
+  }
+  .container-settings {
+    width: 75%;
+    height: 500px
+  }
+
+}
+
+@media (max-width: 650px) {
+  .container-settings {
+    z-index: 0;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 65%;
+    height: 65%;
+    scrollbar-width: none;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .table-container-settings td {
+    padding-right: 0
+  }
+  .submit-settings {
+    width: 40%;
+  }
+  .circleAndstatut-settings {
+    padding-top: 75%
+  }
+  .input-settings {
+    width: 200px
+  }
+  .aboutMeDiv-settings {
+    width: 170%
+  }
+}
+
+@media (max-width: 650px) and (max-height: 700px) {
+  .container-settings {
+    height: 65%;
+    position: absolute;
+    top: 8%
+  }
+  .circleAndstatut-settings {
+    padding-top: 120%;
+  }
+}
+
+@media (max-height: 700px) {
+  .container-settings {
+    height: 400px
+  }
+  .circleAndstatut-settings {
+    padding-top: 20%;
+  }
+}
+
+@media (max-height: 550px) {
+  .container-settings {
+    height: 350px
+  }
+  .circleAndstatut-settings {
+    padding-top: 30%;
+  }
+}

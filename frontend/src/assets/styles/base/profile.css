@@ -1,0 +1,470 @@
+
+.align-vertical{
+    display: flex;
+    flex-direction: column;
+}
+
+.align-horizontal{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.stats-profile{
+    gap: 20px;
+}
+
+.containerAndButtons-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55em;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+    position: relative;
+    margin-top: 30%
+}
+
+.container-profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.circle-label-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%; 
+  background-color: #D9D9D9;
+  color: black;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin-right: 7%;
+  margin-top: 3%
+}
+
+.info-profile {
+    z-index: 10;
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%
+}
+
+.p-profile {
+    margin: 0;
+    font-family: 'Baloo Da 2', sans-serif;
+}
+
+#Username-profile {
+    font-weight:bold;
+    font-size: 18px;
+    letter-spacing: 0.08rem;
+}
+
+.LastAndFirstName-profile {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+
+}
+
+.FollowAndFollower-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    height: 5em;
+    margin-left: 23%;
+    gap: 3em;
+    position: absolute;
+    font-family: 'Baloo Da 2', sans-serif;
+}
+
+
+
+.follower-following-profile {
+    height: 40px;
+    align-items: center;
+    padding:0px 10px 0px 10px ;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.follower-following-profile:hover{
+    background-color: #efefef;
+}
+
+
+
+#Follower {
+    height: 20px;
+    margin: 0;
+    text-decoration:solid;
+}
+
+.gap-followers{
+    gap: 5px;
+}
+
+.follow-profile-button{
+    width: 100px;
+    background: #545cb6;
+    color: rgb(246, 246, 246);
+    cursor: pointer;
+    
+    border: none;
+    border-radius: 20px;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 15px;
+}
+
+.follow-profile-button:hover{
+    background: #747eee;
+}
+
+
+.follow-profile-button:active{
+    transform: translateY(1px);
+}
+
+
+.follow-profile-button-private{
+    width: 100px;
+    border-radius: 20px;
+    background-color: #545cb6;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-family: 'Abhaya Libre', serif;
+    font-size:15px
+
+}
+
+
+.follow-profile-button-private:hover{
+    background-color: #6f79dc;
+}
+
+
+.follow-profile-button-private:active{
+    transform: translateY(2px);
+}
+
+
+.unfollow-profile-button{
+    width: 100px;
+    background: #d04f4f;
+    color: rgb(246, 246, 246);
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 15px;
+}
+
+
+
+.follow-profile-button-waiting{
+    width: 100px;
+    border-radius: 20px;
+    background-color: #8688db;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-family: 'Abhaya Libre', serif;
+    font-size:15px
+}
+
+.follow-profile-button-waiting:hover{
+    background-color: #6f79dc;
+}
+
+
+.follow-profile-button-waiting:active{
+    transform: translateY(2px);
+}
+
+
+.unfollow-profile-button:hover{
+    background: #ed3d3d;
+}
+
+.unfollow-profile-button:active{
+    transform: translateY(2px);
+}
+
+
+#Follow {
+    height: 20px;
+    margin: 0
+}
+
+.infoUser-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-profile {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    z-index: 1;
+    margin-top: -10%;
+}
+
+.edit-profile {
+    border: none;
+    border-radius: 20px;
+    background: #393C5E;
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Abhaya Libre', serif;
+    padding: 0px 20px 0px 20px
+}
+  
+.edit-profile:hover {
+    filter: brightness(1.2);
+}
+
+.share-profile {
+    border: none;
+    border-radius: 20px;
+    background: #393C5E;
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Abhaya Libre', serif;
+    padding: 0px 20px 0px 20px
+}
+  
+.share-profile:hover {
+    filter: brightness(1.2)
+}
+
+
+#modal-followers-waiting{
+    width: 250px;
+    height: 220px;
+    border: 5px solid rgb(12, 12, 12);
+    border-radius: 5px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.user-button-waiting {
+    width: auto;
+    height: 60px;
+    background-color: rgb(39, 37, 37);
+    display: flex;  
+    flex-direction: row;
+    align-items: center; 
+    justify-content: left; 
+    gap: 20px; 
+}
+
+.user-button-waiting img {
+    background-color: white;
+    border-radius: 14px;
+    border: none;
+    height: 90%; 
+    max-width: 20%;
+}
+
+.user-button-waiting p {
+    color: white;
+    margin: 0; 
+}
+
+
+.div-all-in-divUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+   
+}
+
+.div-buttons-in-divUser{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+.button-user-waiting{
+    width: 65px;
+    border-radius: 10px;
+    border: none;
+    height: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+
+.decline-user{
+    background-color: rgb(207, 38, 38);
+}
+
+
+.accept-user{
+    background-color: rgb(9, 151, 2);
+}
+
+
+
+
+.modal-followers{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor:auto;
+    z-index: 1;
+}
+
+.lists-modals-profilepage{
+    width:500px;
+    height: 500px;
+    border-radius: 40px;
+    overflow: auto;
+    scrollbar-width: none;
+    background-color: #191919;
+    
+}
+
+
+.search-bar-container {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    z-index: 2;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.of-followers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+
+.of-followers p {
+    color: white;
+    font-size: 75 px;
+    cursor: pointer;
+
+}
+
+.of-followers img{
+    clip-path: circle(50%);
+    border: none;
+    width: 50px;
+    height:50px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ================================================== RESPONSIVE ========================================================= */
+
+@media(max-width: 920px) {
+    .containerAndButtons-profile {
+        width: 47em;
+        margin-top: -35%
+    }
+}
+
+@media(max-width: 860px) {
+    .containerAndButtons-profile {
+        width: 40em;
+        margin-top: -37%
+    }
+    .circle-label-profile {
+        width: 120px;
+        height: 120px;
+        margin-right: 5%
+    }
+    .buttons-profile {
+        flex-direction: column;
+        margin-top: 85%;
+        margin-right: 80%;
+        gap: 0.5em;
+        align-items: center;
+    }
+    .edit-profile {
+        height: 23px;
+        font-size: 18px;
+        padding: 2px 23px 2px 23px
+    }
+    .share-profile {
+        height: 23px;
+        font-size: 18px;
+        padding: 2px 23px 2px 23px
+    }
+}
+
+@media(max-width: 720px) {
+    .containerAndButtons-profile {
+        width: 34em;
+        padding-bottom: 15px;
+        margin-top: -45%
+    }
+    .buttons-profile {
+        margin-right: 59%
+    }
+    .stats-profile {
+        margin-right: 15%;
+    }
+}
+
+@media(max-width: 560px) {
+    .containerAndButtons-profile {
+        width: 28em;
+        margin-top: -53%
+    }
+    .info-profile {
+        font-size: 14px
+    }
+    .buttons-profile {
+        margin-right: 58%;
+        position: relative;
+        bottom: -22%
+    }
+    .edit-profile {
+        height: 20px;
+        font-size: 16px;
+        padding: 2px 15px 2px 15px
+    }
+    .share-profile {
+        height: 20px;
+        font-size: 16px;
+        padding: 2px 15px 2px 15px
+    }
+}

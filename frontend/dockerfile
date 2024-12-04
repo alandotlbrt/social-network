@@ -1,0 +1,30 @@
+# Utiliser une image Node officielle comme image de base
+FROM node:latest
+
+# Défini le répertoire de travail à /app
+WORKDIR /app/frontend
+
+# Copier le reste des fichiers de l'application dans le conteneur
+COPY . /app/frontend/
+
+# Installer les dépendances dans le bon répertoire
+RUN  npm install && \
+
+    ln -s /go/bin/linux_amd64/migrate /usr/local/bin/migrate && \
+    apt-get update && \
+    apt-get install -y zsh && \
+    sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" && \
+    npm install vue-router@4 && \
+    npm install axios
+# copie les fichiers et dossiers du projet dans le dossier de travail (par exemple : le dossier 'app')
+#COPY . .
+
+# construit l'app pour la production en la minifiant
+RUN  npm run build
+
+# Exposer le port que l'application utilise
+EXPOSE 5173
+
+# Commande pour exécuter l'application
+# CMD ["tail", "-f", "/dev/sh", "ls"]
+CMD ["npm", "run", "dev" , "--", "--host"]

@@ -1,0 +1,49 @@
+* {
+    letter-spacing: 0.03rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.container {
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 50px;
+    padding: 20px;
+    height: 650px;
+    width: 900px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.3)
+
+}
+
+.align-horizontal{
+    display: flex;
+    flex-direction: row;
+    padding-left: 40%;
+}
+
+.button-privacy{
+    width: 116px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.text-area{
+    width: 290px;
+    height: 105.839px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 0.7px solid #D1D1D1;
+    background: #FFF;
+    resize: none;
+}
+
+
+.button-post{
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background: #cfd3ff;
+}
